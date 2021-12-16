@@ -169,6 +169,11 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
             sendResponse(response);
         });
         return true;
+    } else if (name === "POLL_LOG") {
+        browser.runtime.sendNativeMessage({name: "POLL_LOG"}, response => {
+            sendResponse(response);
+        });
+        return true;
     }
 });
 

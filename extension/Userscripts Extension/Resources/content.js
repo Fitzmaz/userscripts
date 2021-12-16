@@ -9,6 +9,15 @@ const uid = Math.random().toString(36).substr(2, 8);
 // keep reference to platform
 let platform;
 
+// poll log message
+setInterval(() => {
+    browser.runtime.sendMessage({name: "POLL_LOG"}, response => {
+        for (const log of response.logs) {
+            console.log('[Native]', log);
+        }
+    });
+}, 1000);
+
 // request code immediately
 browser.runtime.sendMessage({name: "REQ_USERSCRIPTS"}, response => {
     // save code to data var so cspFallback can be attempted

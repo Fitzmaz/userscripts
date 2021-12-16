@@ -13,9 +13,14 @@ struct SharedDefaults {
     #endif
 }
 
+struct LogMessages {
+    static var logs = [String]()
+}
+
 func err(_ message: String) {
     let log = OSLog(subsystem: Bundle.main.bundleIdentifier!, category: "general")
     os_log("%{public}@", log: log, type: .error, "Error: \(message)")
+    LogMessages.logs.append(message)
 }
 
 func logText(_ message: String) {
@@ -23,6 +28,7 @@ func logText(_ message: String) {
     // NSLog(message)
     let log = OSLog(subsystem: Bundle.main.bundleIdentifier!, category: "general")
     os_log("%{public}@", log: log, type: .default, message)
+    LogMessages.logs.append(message)
 }
 
 func getDocumentsDirectory() -> URL {

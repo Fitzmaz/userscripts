@@ -1,6 +1,12 @@
 import Foundation
 import SafariServices
 
+func getLogs() -> [String] {
+    let logs = [] + LogMessages.logs
+    LogMessages.logs.removeAll()
+    return logs
+}
+
 // helpers
 func getRequireLocation() -> URL {
     // simple helper in case required code save directory needs to change

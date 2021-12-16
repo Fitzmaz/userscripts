@@ -303,6 +303,9 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
                 }
             #endif
         }
+        else if name == "POLL_LOG" {
+            response.userInfo = [ SFExtensionMessageKey: [ "logs": getLogs() ] ]
+        }
         // send inBoundError if found
         if inBoundError {
             response.userInfo = [SFExtensionMessageKey: ["error": "Failed to parse inbound message"]]
