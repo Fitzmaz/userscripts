@@ -552,7 +552,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Userscripts-iOS/Userscripts-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = J74Q8V8V8N;
+				DEVELOPMENT_TEAM = DD7MSVVG7B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Userscripts-iOS/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Userscripts;
@@ -574,7 +574,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.userscripts.macos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcr.extension.us;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -593,7 +593,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Userscripts-iOS/Userscripts-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = J74Q8V8V8N;
+				DEVELOPMENT_TEAM = DD7MSVVG7B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Userscripts-iOS/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Userscripts;
@@ -615,7 +615,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.userscripts.macos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcr.extension.us;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -632,7 +632,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Userscripts-iOS Extension/Userscripts-iOS Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = J74Q8V8V8N;
+				DEVELOPMENT_TEAM = DD7MSVVG7B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Userscripts-iOS Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Userscripts Extension";
@@ -648,7 +648,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.userscripts.macos.Userscripts-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zcr.extension.us.Userscripts-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -665,7 +665,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Userscripts-iOS Extension/Userscripts-iOS Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = J74Q8V8V8N;
+				DEVELOPMENT_TEAM = DD7MSVVG7B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Userscripts-iOS Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Userscripts Extension";
@@ -681,7 +681,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.userscripts.macos.Userscripts-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zcr.extension.us.Userscripts-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

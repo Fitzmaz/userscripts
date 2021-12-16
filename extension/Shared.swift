@@ -5,7 +5,7 @@ import os
 struct SharedDefaults {
     // https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_application-groups
     #if os(iOS)
-        static let suiteName = "group.com.userscripts.ios"
+        static let suiteName = "group.com.zcr"
         static let keyName = "iosReadLocation"
     #elseif os(macOS)
         static let suiteName = "J74Q8V8V8N.com.userscripts.macos"
