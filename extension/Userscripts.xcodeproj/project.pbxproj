@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D083307276C858A00E02D4A /* inject in Resources */ = {isa = PBXBuildFile; fileRef = 1D083306276C858A00E02D4A /* inject */; };
+		1D083308276C858A00E02D4A /* inject in Resources */ = {isa = PBXBuildFile; fileRef = 1D083306276C858A00E02D4A /* inject */; };
 		4A301B2A270A474400C7E9E1 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A57BA07227235CE008A9763 /* SafariWebExtensionHandler.swift */; };
 		4A301B2B270A474F00C7E9E1 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 4A36A617268266B30018536B /* _locales */; };
 		4A301B2C270A475200C7E9E1 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4A36A616268266B30018536B /* images */; };
@@ -91,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D083306276C858A00E02D4A /* inject */ = {isa = PBXFileReference; lastKnownFileType = folder; path = inject; sourceTree = "<group>"; };
 		4A36A616268266B30018536B /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		4A36A617268266B30018536B /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		4A4CF6DB270A38BD00111584 /* Userscripts-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Userscripts-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +262,7 @@
 			children = (
 				4A36A617268266B30018536B /* _locales */,
 				4A36A616268266B30018536B /* images */,
+				1D083306276C858A00E02D4A /* inject */,
 				4AC2A1F9268A67A00081B045 /* background.js */,
 				4AB22357268B9B9200D551C6 /* content.js */,
 				4AD66D2026826D8100B004E8 /* manifest.json */,
@@ -415,6 +419,7 @@
 				4A301B31270A476600C7E9E1 /* popup.js in Resources */,
 				4A301B2E270A475D00C7E9E1 /* content.js in Resources */,
 				4A301B30270A476400C7E9E1 /* popup.html in Resources */,
+				1D083308276C858A00E02D4A /* inject in Resources */,
 				4A301B2C270A475200C7E9E1 /* images in Resources */,
 				4A301B2F270A476000C7E9E1 /* manifest.json in Resources */,
 				4A301B2D270A475900C7E9E1 /* background.js in Resources */,
@@ -440,6 +445,7 @@
 				4AF7577D2683BB5F001E0D95 /* popup.html in Resources */,
 				4AC2A1FA268A67A00081B045 /* background.js in Resources */,
 				4AB22358268B9B9200D551C6 /* content.js in Resources */,
+				1D083307276C858A00E02D4A /* inject in Resources */,
 				4A36A61A268266B30018536B /* images in Resources */,
 				4ACB857026ACE9520094D919 /* page.html in Resources */,
 				4A36A61B268266B30018536B /* _locales in Resources */,

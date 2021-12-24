@@ -23,6 +23,9 @@
             "32": "images/toolbar-icon-32.png"
         }
     },
+    "web_accessible_resources": [
+        "inject/*.inject.js"
+    ],
     "content_scripts": [
         {
             "js": ["content.js"],

@@ -415,6 +415,28 @@ function xhr(details) {
     return {abort: abort};
 }
 
+function injectPackageScript(path) {
+    browser.runtime.sendMessage({ name: "RUNTIME_GETURL", path }, response => {
+        const { url } = response;
+        console.log('injecting package script', url);
+        if (document.head) {
+            let el = document.createElement("script");
+            el.type = "text/javascript";
+            el.src = url;
+            document.head.appendChild(el);
+            console.log('injected package script', url);
+            return;
+        }
+        document.addEventListener("DOMContentLoaded", ()=>{
+            let el = document.createElement("script");
+            el.type = "text/javascript";
+            el.src = url;
+            document.head.appendChild(el);
+            console.log('injected package script', url);
+        })
+    });
+}
+
 // listen for messages from background, popup, etc...
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const name = request.name;
@@ -518,3 +540,7 @@ window.addEventListener("message", e => {
 document.addEventListener("securitypolicyviolation", cspFallback);
 // create context menu items as needed
 document.addEventListener("contextmenu", processJSContextMenuItems);
+
+// inject scripts
+injectPackageScript("/inject/fetch.inject.js");
+injectPackageScript("/inject/xhr.inject.js");

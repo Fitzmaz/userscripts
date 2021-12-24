@@ -174,6 +174,10 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
             sendResponse(response);
         });
         return true;
+    } else if (name === "RUNTIME_GETURL") {
+        const url = browser.runtime.getURL(request.path);
+        sendResponse({ url })
+        return true;
     }
 });
 
